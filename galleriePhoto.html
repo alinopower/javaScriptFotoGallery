@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="galleriePhoto.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Gallerie Photo</title>
+    <style>
+        #prev,
+        #next,
+        #pause,
+        #play {
+            color: gray;
+            font-size: 3rem;
+        }
+
+       .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center text-center align-items-center">
+            <div class="col-12">
+                <h1>Gallerie Photo</h1>
+            </div>
+            <div class="col-1" id="prev">
+                <i class="fa-solid fa-less-than"></i>
+            </div>
+            <div class="col-5" id="gallerie">
+                <img src="img/photo1.jpg" alt="" class="img-fluid" />
+                <img src="img/photo2.jpg" alt="" class="img-fluid" />
+                <img src="img/photo3.jpg" alt="" class="img-fluid" />
+                <img src="img/photo4.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-1" id="next">
+                <i class="fa-solid fa-greater-than"></i>
+            </div>
+            <div class="col-12">
+                <span id="pause"><i class="fa-solid fa-pause"></i></span>
+                <span id="play"><i class="fa-solid fa-play"></i></span>
+            </div>
+        </div>
+    </div>
+    <script src="galleriePhoto.js"></script>
+</body>
+
+</html>
